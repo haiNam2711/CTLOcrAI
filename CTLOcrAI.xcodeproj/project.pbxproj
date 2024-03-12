@@ -6,13 +6,91 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		265496882BA0423100B122C5 /* CTLOcrAI_Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 265496892BA0423100B122C5 /* Build configuration list for PBXAggregateTarget "CTLOcrAI_Universal" */;
+			buildPhases = (
+				2654968C2BA0423D00B122C5 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CTLOcrAI_Universal;
+			productName = CTLOcrAI_Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		1548DE7B291592343B74F14D /* Pods_CTLOcrAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E321042BA0579D00A7D5DA /* Pods_CTLOcrAI.framework */; };
 		265496512B971DEE00B122C5 /* CTLOcrAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 265496502B971DEE00B122C5 /* CTLOcrAI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		265496602B9AC1AB00B122C5 /* CTLOcrFDClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654965F2B9AC1AB00B122C5 /* CTLOcrFDClient.swift */; };
+		265496622B9AC26300B122C5 /* CTLOcrAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265496612B9AC26300B122C5 /* CTLOcrAPIClient.swift */; };
+		265496662B9E098D00B122C5 /* CTLOcrAIServiceError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265496652B9E098D00B122C5 /* CTLOcrAIServiceError+Extension.swift */; };
+		265496682B9EA63900B122C5 /* CTLOcrIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265496672B9EA63900B122C5 /* CTLOcrIClient.swift */; };
+		2654966B2B9EABB100B122C5 /* CTLOcrRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654966A2B9EABB100B122C5 /* CTLOcrRegisterResponse.swift */; };
+		2654966D2B9EB02B00B122C5 /* CTLOcrFDUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654966C2B9EB02B00B122C5 /* CTLOcrFDUseCase.swift */; };
+		2654966F2B9EB65000B122C5 /* CTLOcrPredictResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654966E2B9EB65000B122C5 /* CTLOcrPredictResponse.swift */; };
+		265496772BA041C600B122C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265496762BA041C600B122C5 /* AppDelegate.swift */; };
+		265496792BA041C600B122C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265496782BA041C600B122C5 /* SceneDelegate.swift */; };
+		2654967B2BA041C600B122C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654967A2BA041C600B122C5 /* ViewController.swift */; };
+		2654967E2BA041C600B122C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2654967C2BA041C600B122C5 /* Main.storyboard */; };
+		265496802BA041CB00B122C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2654967F2BA041CB00B122C5 /* Assets.xcassets */; };
+		265496832BA041CB00B122C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265496812BA041CB00B122C5 /* LaunchScreen.storyboard */; };
+		2654968D2BA0426A00B122C5 /* CTLOcrAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2654964D2B971DEE00B122C5 /* CTLOcrAI.framework */; };
+		2654968E2BA0426A00B122C5 /* CTLOcrAI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2654964D2B971DEE00B122C5 /* CTLOcrAI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5338744E08407934D5C4EC13 /* Pods_CTLOcrAIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD9CEAF716BD9B1B37FDD6 /* Pods_CTLOcrAIDemo.framework */; };
+		E53DE70462EB03B0297B1E30 /* Pods_CTLOcrAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5F804DDDD347B01A857EA0 /* Pods_CTLOcrAI.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2654968F2BA0426A00B122C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265496442B971DEE00B122C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2654964C2B971DEE00B122C5;
+			remoteInfo = CTLOcrAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		265496912BA0426A00B122C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2654968E2BA0426A00B122C5 /* CTLOcrAI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		02F56F5B34F0D49B12F0BC59 /* Pods-CTLOcrAIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTLOcrAIDemo.release.xcconfig"; path = "Target Support Files/Pods-CTLOcrAIDemo/Pods-CTLOcrAIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		10C4AD0007AB60BAB43906D8 /* Pods-CTLOcrAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTLOcrAI.release.xcconfig"; path = "Target Support Files/Pods-CTLOcrAI/Pods-CTLOcrAI.release.xcconfig"; sourceTree = "<group>"; };
+		15BD9CEAF716BD9B1B37FDD6 /* Pods_CTLOcrAIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTLOcrAIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDB4D6A205B40C65CBB58B8 /* Pods-CTLOcrAIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTLOcrAIDemo.debug.xcconfig"; path = "Target Support Files/Pods-CTLOcrAIDemo/Pods-CTLOcrAIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2654964D2B971DEE00B122C5 /* CTLOcrAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTLOcrAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		265496502B971DEE00B122C5 /* CTLOcrAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTLOcrAI.h; sourceTree = "<group>"; };
+		2654965F2B9AC1AB00B122C5 /* CTLOcrFDClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrFDClient.swift; sourceTree = "<group>"; };
+		265496612B9AC26300B122C5 /* CTLOcrAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrAPIClient.swift; sourceTree = "<group>"; };
+		265496652B9E098D00B122C5 /* CTLOcrAIServiceError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTLOcrAIServiceError+Extension.swift"; sourceTree = "<group>"; };
+		265496672B9EA63900B122C5 /* CTLOcrIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrIClient.swift; sourceTree = "<group>"; };
+		2654966A2B9EABB100B122C5 /* CTLOcrRegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrRegisterResponse.swift; sourceTree = "<group>"; };
+		2654966C2B9EB02B00B122C5 /* CTLOcrFDUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrFDUseCase.swift; sourceTree = "<group>"; };
+		2654966E2B9EB65000B122C5 /* CTLOcrPredictResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLOcrPredictResponse.swift; sourceTree = "<group>"; };
+		265496742BA041C600B122C5 /* CTLOcrAIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTLOcrAIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265496762BA041C600B122C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		265496782BA041C600B122C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2654967A2BA041C600B122C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2654967D2BA041C600B122C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2654967F2BA041CB00B122C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		265496822BA041CB00B122C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		265496842BA041CB00B122C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E321042BA0579D00A7D5DA /* Pods_CTLOcrAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CTLOcrAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5F804DDDD347B01A857EA0 /* Pods_CTLOcrAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTLOcrAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C467F5D3E9FB7622148C3EC0 /* Pods-CTLOcrAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTLOcrAI.debug.xcconfig"; path = "Target Support Files/Pods-CTLOcrAI/Pods-CTLOcrAI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +98,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53DE70462EB03B0297B1E30 /* Pods_CTLOcrAI.framework in Frameworks */,
+				1548DE7B291592343B74F14D /* Pods_CTLOcrAI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265496712BA041C600B122C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2654968D2BA0426A00B122C5 /* CTLOcrAI.framework in Frameworks */,
+				5338744E08407934D5C4EC13 /* Pods_CTLOcrAIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,7 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				2654964F2B971DEE00B122C5 /* CTLOcrAI */,
+				265496752BA041C600B122C5 /* CTLOcrAIDemo */,
 				2654964E2B971DEE00B122C5 /* Products */,
+				A2577236E2E9AB766A461828 /* Pods */,
+				2D4426DAEEA6540D73B2B42F /* Frameworks */,
+				26E321072BA057FB00A7D5DA /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -38,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				2654964D2B971DEE00B122C5 /* CTLOcrAI.framework */,
+				265496742BA041C600B122C5 /* CTLOcrAIDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -45,9 +139,98 @@
 		2654964F2B971DEE00B122C5 /* CTLOcrAI */ = {
 			isa = PBXGroup;
 			children = (
+				265496582B9726CD00B122C5 /* CTLOcrCV */,
+				265496572B9726BC00B122C5 /* CTLOcrNLP */,
 				265496502B971DEE00B122C5 /* CTLOcrAI.h */,
+				265496672B9EA63900B122C5 /* CTLOcrIClient.swift */,
+				265496612B9AC26300B122C5 /* CTLOcrAPIClient.swift */,
+				265496652B9E098D00B122C5 /* CTLOcrAIServiceError+Extension.swift */,
 			);
 			path = CTLOcrAI;
+			sourceTree = "<group>";
+		};
+		265496572B9726BC00B122C5 /* CTLOcrNLP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CTLOcrNLP;
+			sourceTree = "<group>";
+		};
+		265496582B9726CD00B122C5 /* CTLOcrCV */ = {
+			isa = PBXGroup;
+			children = (
+				2654965A2B9726EC00B122C5 /* CTLOcrText */,
+				265496592B9726E100B122C5 /* CTLOcrFaceDetect */,
+			);
+			path = CTLOcrCV;
+			sourceTree = "<group>";
+		};
+		265496592B9726E100B122C5 /* CTLOcrFaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				265496692B9EA81100B122C5 /* Models */,
+				2654965F2B9AC1AB00B122C5 /* CTLOcrFDClient.swift */,
+				2654966C2B9EB02B00B122C5 /* CTLOcrFDUseCase.swift */,
+			);
+			path = CTLOcrFaceDetect;
+			sourceTree = "<group>";
+		};
+		2654965A2B9726EC00B122C5 /* CTLOcrText */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CTLOcrText;
+			sourceTree = "<group>";
+		};
+		265496692B9EA81100B122C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2654966A2B9EABB100B122C5 /* CTLOcrRegisterResponse.swift */,
+				2654966E2B9EB65000B122C5 /* CTLOcrPredictResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		265496752BA041C600B122C5 /* CTLOcrAIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				265496762BA041C600B122C5 /* AppDelegate.swift */,
+				265496782BA041C600B122C5 /* SceneDelegate.swift */,
+				2654967A2BA041C600B122C5 /* ViewController.swift */,
+				2654967C2BA041C600B122C5 /* Main.storyboard */,
+				2654967F2BA041CB00B122C5 /* Assets.xcassets */,
+				265496812BA041CB00B122C5 /* LaunchScreen.storyboard */,
+				265496842BA041CB00B122C5 /* Info.plist */,
+			);
+			path = CTLOcrAIDemo;
+			sourceTree = "<group>";
+		};
+		26E321072BA057FB00A7D5DA /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				26E321042BA0579D00A7D5DA /* Pods_CTLOcrAI.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		2D4426DAEEA6540D73B2B42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A5F804DDDD347B01A857EA0 /* Pods_CTLOcrAI.framework */,
+				15BD9CEAF716BD9B1B37FDD6 /* Pods_CTLOcrAIDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2577236E2E9AB766A461828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C467F5D3E9FB7622148C3EC0 /* Pods-CTLOcrAI.debug.xcconfig */,
+				10C4AD0007AB60BAB43906D8 /* Pods-CTLOcrAI.release.xcconfig */,
+				1BDB4D6A205B40C65CBB58B8 /* Pods-CTLOcrAIDemo.debug.xcconfig */,
+				02F56F5B34F0D49B12F0BC59 /* Pods-CTLOcrAIDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 265496542B971DEE00B122C5 /* Build configuration list for PBXNativeTarget "CTLOcrAI" */;
 			buildPhases = (
+				0492C648D279476341CFC960 /* [CP] Check Pods Manifest.lock */,
 				265496482B971DEE00B122C5 /* Headers */,
 				265496492B971DEE00B122C5 /* Sources */,
 				2654964A2B971DEE00B122C5 /* Frameworks */,
@@ -82,6 +266,27 @@
 			productReference = 2654964D2B971DEE00B122C5 /* CTLOcrAI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		265496732BA041C600B122C5 /* CTLOcrAIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265496852BA041CB00B122C5 /* Build configuration list for PBXNativeTarget "CTLOcrAIDemo" */;
+			buildPhases = (
+				0146E3EC774C135F57E093DF /* [CP] Check Pods Manifest.lock */,
+				265496702BA041C600B122C5 /* Sources */,
+				265496712BA041C600B122C5 /* Frameworks */,
+				265496722BA041C600B122C5 /* Resources */,
+				265496912BA0426A00B122C5 /* Embed Frameworks */,
+				0A16BAEF3D10FD75385C996E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265496902BA0426A00B122C5 /* PBXTargetDependency */,
+			);
+			name = CTLOcrAIDemo;
+			productName = CTLOcrAIDemo;
+			productReference = 265496742BA041C600B122C5 /* CTLOcrAIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,9 +294,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					2654964C2B971DEE00B122C5 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					265496732BA041C600B122C5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					265496882BA0423100B122C5 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -110,6 +323,8 @@
 			projectRoot = "";
 			targets = (
 				2654964C2B971DEE00B122C5 /* CTLOcrAI */,
+				265496732BA041C600B122C5 /* CTLOcrAIDemo */,
+				265496882BA0423100B122C5 /* CTLOcrAI_Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -122,17 +337,152 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		265496722BA041C600B122C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265496832BA041CB00B122C5 /* LaunchScreen.storyboard in Resources */,
+				265496802BA041CB00B122C5 /* Assets.xcassets in Resources */,
+				2654967E2BA041C600B122C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0146E3EC774C135F57E093DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTLOcrAIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0492C648D279476341CFC960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTLOcrAI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A16BAEF3D10FD75385C996E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTLOcrAIDemo/Pods-CTLOcrAIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTLOcrAIDemo/Pods-CTLOcrAIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CTLOcrAIDemo/Pods-CTLOcrAIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2654968C2BA0423D00B122C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVEAL_ARCHIVE_IN_FINDER=true\n\nrm -rf \"./Output\"\n\n######################\n# Build Frameworks\n######################\n\necho \"=== Building for iPhone device ===\"\nxcodebuild archive -workspace ${PROJECT_NAME}.xcworkspace \\\n  -scheme ${PROJECT_NAME} \\\n  -sdk iphoneos \\\n  -archivePath \"./Output/archives/ios_devices.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n  \necho \"=== Building for iPhone simulators ===\"\n  xcodebuild archive  -workspace ${PROJECT_NAME}.xcworkspace \\\n  -scheme ${PROJECT_NAME} \\\n  -sdk iphonesimulator \\\n  -archivePath \"./Output/archives/ios_simulators.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n  \necho \"=== Combining executables ===\"\n  xcodebuild -create-xcframework \\\n-framework ./Output/archives/ios_devices.xcarchive/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-framework ./Output/archives/ios_simulators.xcarchive/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-output Output/build/${PROJECT_NAME}.xcframework\n\necho \"=== Open Finder ===\"\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n  open \"./Output/build/\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		265496492B971DEE00B122C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265496662B9E098D00B122C5 /* CTLOcrAIServiceError+Extension.swift in Sources */,
+				265496682B9EA63900B122C5 /* CTLOcrIClient.swift in Sources */,
+				265496602B9AC1AB00B122C5 /* CTLOcrFDClient.swift in Sources */,
+				265496622B9AC26300B122C5 /* CTLOcrAPIClient.swift in Sources */,
+				2654966D2B9EB02B00B122C5 /* CTLOcrFDUseCase.swift in Sources */,
+				2654966B2B9EABB100B122C5 /* CTLOcrRegisterResponse.swift in Sources */,
+				2654966F2B9EB65000B122C5 /* CTLOcrPredictResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265496702BA041C600B122C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2654967B2BA041C600B122C5 /* ViewController.swift in Sources */,
+				265496772BA041C600B122C5 /* AppDelegate.swift in Sources */,
+				265496792BA041C600B122C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		265496902BA0426A00B122C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2654964C2B971DEE00B122C5 /* CTLOcrAI */;
+			targetProxy = 2654968F2BA0426A00B122C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2654967C2BA041C600B122C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2654967D2BA041C600B122C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		265496812BA041CB00B122C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265496822BA041CB00B122C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		265496522B971DEE00B122C5 /* Debug */ = {
@@ -140,6 +490,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -173,7 +524,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -206,6 +557,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -239,7 +591,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -262,7 +614,9 @@
 		};
 		265496552B971DEE00B122C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C467F5D3E9FB7622148C3EC0 /* Pods-CTLOcrAI.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -286,6 +640,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,7 +648,9 @@
 		};
 		265496562B971DEE00B122C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C4AD0007AB60BAB43906D8 /* Pods-CTLOcrAI.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -322,6 +679,84 @@
 			};
 			name = Release;
 		};
+		265496862BA041CB00B122C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDB4D6A205B40C65CBB58B8 /* Pods-CTLOcrAIDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G9YD8GX8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CTLOcrAIDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnam.CTLOcrAIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		265496872BA041CB00B122C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F56F5B34F0D49B12F0BC59 /* Pods-CTLOcrAIDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G9YD8GX8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CTLOcrAIDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnam.CTLOcrAIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2654968A2BA0423100B122C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G9YD8GX8D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2654968B2BA0423100B122C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G9YD8GX8D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +774,24 @@
 			buildConfigurations = (
 				265496552B971DEE00B122C5 /* Debug */,
 				265496562B971DEE00B122C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265496852BA041CB00B122C5 /* Build configuration list for PBXNativeTarget "CTLOcrAIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265496862BA041CB00B122C5 /* Debug */,
+				265496872BA041CB00B122C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265496892BA0423100B122C5 /* Build configuration list for PBXAggregateTarget "CTLOcrAI_Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2654968A2BA0423100B122C5 /* Debug */,
+				2654968B2BA0423100B122C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
